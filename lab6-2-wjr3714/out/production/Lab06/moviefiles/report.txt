@@ -1,0 +1,124 @@
+Test Cases
+
+Note: The result of these tests is documented in the file validation_report.txt found inside the folder Transcript.
+________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________
+Definitions:
+The number of links or degree of separation between actors is defined by the number of movies connecting these actors.
+
+For example:
+
+Data Set File: mymovies.txt
+
+User Input:
+Actor #1: Audrey Tautou
+Actor #2: John Cusack
+
+Output: Audrey Tautou was in Movie_I with Demi Moore who was in Movie_D with John Cusack.
+
+Number of links or degree of separation: 2
+________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________
+
+Test Case #1
+Data Set File: mymoives.txt or movies-0.txt
+Description of Test: Shortest path is zero. This means that the first actor equals the second actor provided.
+Expected Outcome: The program should report "Silly! They are in their own movie!"
+
+User Input:
+Actor #1: Tom Hanks
+Actor #2: Tom Hanks
+
+Available Path:
+ * Tom Hanks -> Tom Hanks
+ * Number of links or degree of separation: 0
+________________________________________________________________________________________________________________________________________
+
+*** Test Case #2 ***
+
+Data Set File: mymovies.txt
+Description of Test: At least two paths exists, one is less than or equal to three degrees of separation and the other
+is greater than three degrees of separation.
+Expected Outcome: Algorithm should find the shortest path (in this case Path #2 as outlined below).
+
+User Input:
+Actor #1: Audrey Tautou
+Actor #2: John Cusack
+
+Available Paths:
+Path #1 (greater than three degrees of separation):
+ * Audrey Tautou -> Movie_E -> Tom Hanks -> Movie_A -> Kevin Bacon ->  Movie_C -> Demi Moore -> Movie_D -> John Cusack
+ * Number of links or degree of separation: 4
+
+Path #2 (less than or equal to three degrees of separation):
+ * Audrey Tautou -> Movie_I -> Demi Moore -> Movie_D -> John Cusack
+ * Number of links or degree of separation: 2
+
+______________________________________________________________________________________________________________________________________
+
+*** Test Case #3 ***
+Data Set File: mymovies.txt
+Description of Test: No path exists. In this data set (mymovies.txt), the actors in Movie_J are only connected to the actors in Movie_J.
+Expected Outcome: The algorithm should correctly determine that no path exists between these two actors.
+
+User Input:
+Actor #1: Neils Bohr
+Actor #2: Kevin Bacon
+______________________________________________________________________________________________________________________________________
+
+Test Case #4
+Data Set File: mymovies.txt
+Description of Test: Only one path exists, and this path is less than or equal to 3 degrees of separation.
+Expected Outcome: Algorithm should find the path.
+
+User Input:
+Actor #1: Victor Hugo
+Actor #2: Morgan Freeman
+
+Available Path:
+ * Victor Hugo -> Movie_I -> Audrey Tautou -> Movie_F -> Morgan Freeman
+
+ ______________________________________________________________________________________________________________________________________
+
+ *** Test Case #5 ***
+
+ Data Set File: movies-0.txt
+ Description of Test: A path exists but the path is greater than three degrees of separation.
+ Expected Outcome: The algorithm should correctly determine that no path shorter than 3 links was found.
+
+ A)
+ User Input:
+ Actor #1: Ian McKellen
+ Actor #2: John Cusack
+
+ Shortest Available Path:
+  * Ian McKellen -> DaVinciCode -> Tom Hanks -> Apollo13 -> Kevin Bacon -> AFewGoodMen -> Demi Moore -> OneCrazySummer -> John Cusack
+
+ Number of links or degree of separation: 4
+
+ B)
+ User Input:
+ Actor #1: Audrey Tautou
+ Actor #2: John Cusack
+
+ Shortest Available Path:
+  * Audrey Tautou -> DaVinciCode -> Tom Hanks -> Apollo13 -> Kevin Bacon -> AFewGoodMen -> Demi Moore -> OneCrazySummer -> John Cusack
+  * Number of links or degree of separation: 4
+ ______________________________________________________________________________________________________________________________________
+
+*** Test Case #6 ***
+
+Data Set File: movies-0.txt
+Description of Test: Actor does not exist in data set.
+Expected Outcome: The program should print a message saying the actor was not found and request two new names for the next search.
+
+A)
+User Input:
+ Actor #1: Elisabeth Shue
+ Actor #2: Eddie Murphy     <-- Not in data set
+
+B)
+User Input:
+ Actor #1: Abraham Lincoln  <-- Not in data set
+ Actor #2: Demi Moore
+ ______________________________________________________________________________________________________________________________________

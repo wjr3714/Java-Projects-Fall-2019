@@ -1,0 +1,83 @@
+******************************
+ Execution of Test Cases #1-4
+******************************
+
+Enter movie data filename: /Users/williamreid/Desktop/WS/RIT/Semester 11/CSCI 142 - Computer Science II/Laboratory/lab6-2-wjr3714/moviefiles/mymovies.txt
+
+Graph Display Options:
+
+(1) - Graph of Actors (with movie neighbors)
+(2) - Graph of Movies (with actor neighbors)
+(3) - Graph of Actors & Graph of Movies
+
+Please enter the integer corresponding to your choice to display the data set provided as a graph: 2
+
+Movie_H: Alexander Dumas, Jules Verne, Robert Deniro, Victor Hugo
+Movie_G: Anne Hathaway, John Cusack, Queen Elizabeth, Robert Deniro
+Movie_J: Blaise Pascal, Edouard Manet, Neils Bohr
+Movie_I: Audrey Tautou, Demi Moore, Victor Hugo
+Movie_B: Elisabeth Shue, Josh Brolin, Kevin Bacon
+Movie_A: Gary Sinise, Kevin Bacon, Tom Hanks
+Movie_D: Demi Moore, John Cusack
+Movie_C: Demi Moore, Jack Nicholson, Kevin Bacon, Tom Cruise
+Movie_F: Audrey Tautou, Kevin Bacon, Morgan Freeman
+Movie_E: Audrey Tautou, Ian McKellen, Tom Hanks
+
+Enter first actor name (two case-sensitive words): Tom Hanks
+Enter second actor name (two case-sensitive words): Tom Hanks
+Silly! They are in their own movie!
+Enter first actor name (two case-sensitive words): Audrey Tautou
+Enter second actor name (two case-sensitive words): John Cusack
+Audrey Tautou was in Movie_I
+with Demi Moore who was in Movie_D
+with John Cusack.
+Enter first actor name (two case-sensitive words): Neils Bohr
+Enter second actor name (two case-sensitive words): Kevin Bacon
+No path exists between Neils Bohr and Kevin Bacon.
+Enter first actor name (two case-sensitive words): Victor Hugo
+Enter second actor name (two case-sensitive words): Morgan Freeman
+Victor Hugo was in Movie_I
+with Audrey Tautou who was in Movie_F
+with Morgan Freeman.
+Enter first actor name (two case-sensitive words):
+
+
+
+******************************
+ Execution of Test Cases #5-6
+******************************
+
+Enter movie data filename: /Users/williamreid/Desktop/WS/RIT/Semester 11/CSCI 142 - Computer Science II/Laboratory/lab6-2-wjr3714/moviefiles/movies-0.txt
+
+Graph Display Options:
+
+(1) - Graph of Actors (with movie neighbors)
+(2) - Graph of Movies (with actor neighbors)
+(3) - Graph of Actors & Graph of Movies
+
+Please enter the integer corresponding to your choice to display the data set provided as a graph: 1
+
+Demi Moore: AFewGoodMen, OneCrazySummer
+Tom Hanks: Apollo13, DaVinciCode
+Josh Brolin: HollowMan
+Audrey Tautou: DaVinciCode
+Elisabeth Shue: HollowMan
+John Cusack: OneCrazySummer
+Jack Nicholson: AFewGoodMen
+Kevin Bacon: AFewGoodMen, Apollo13, HollowMan
+Tom Cruise: AFewGoodMen
+Ian McKellen: DaVinciCode
+Gary Sinise: Apollo13
+
+Enter first actor name (two case-sensitive words): Ian McKellen
+Enter second actor name (two case-sensitive words): John Cusack
+No path less than or equal to a 3-hop distance exists between Ian McKellen and John Cusack.
+Enter first actor name (two case-sensitive words): Audrey Tautou
+Enter second actor name (two case-sensitive words): John Cusack
+No path less than or equal to a 3-hop distance exists between Audrey Tautou and John Cusack.
+Enter first actor name (two case-sensitive words): Elisabeth Shue
+Enter second actor name (two case-sensitive words): Eddie Murphy
+Eddie Murphy is not known in the /Users/williamreid/Desktop/WS/RIT/Semester 11/CSCI 142 - Computer Science II/Laboratory/lab6-2-wjr3714/moviefiles/movies-0.txt dataset.
+Enter first actor name (two case-sensitive words): Abraham Lincoln
+Abraham Lincoln is not known in the /Users/williamreid/Desktop/WS/RIT/Semester 11/CSCI 142 - Computer Science II/Laboratory/lab6-2-wjr3714/moviefiles/movies-0.txt dataset.
+Enter first actor name (two case-sensitive words):

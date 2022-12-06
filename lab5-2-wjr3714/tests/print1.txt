@@ -1,0 +1,9 @@
+O
+B GOOG 1
+B MSFT 8
+P N
+B AMD 6
+P N
+T
+P N
+C

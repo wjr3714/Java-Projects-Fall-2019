@@ -1,0 +1,12 @@
+O
+B AAPL 10
+B GOOG 5
+P V
+B NFLX 2
+T
+B AMZN 3
+P V
+B AMD 6
+T
+P V
+C

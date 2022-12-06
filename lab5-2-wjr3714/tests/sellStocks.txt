@@ -1,0 +1,7 @@
+O
+B AAPL 5
+B GOOG 1
+B MSFT 8
+S AAPL 3
+P N
+C

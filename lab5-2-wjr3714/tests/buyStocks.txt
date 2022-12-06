@@ -1,0 +1,7 @@
+O
+B GOOG 100
+B MSFT 8
+P
+B AAPL 20
+P
+C

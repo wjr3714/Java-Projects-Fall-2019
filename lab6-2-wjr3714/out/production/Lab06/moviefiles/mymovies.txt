@@ -1,0 +1,10 @@
+Movie_A Kevin Bacon Tom Hanks Gary Sinise
+Movie_B Elisabeth Shue Kevin Bacon Josh Brolin
+Movie_C Tom Cruise Demi Moore Jack Nicholson Kevin Bacon
+Movie_D John Cusack Demi Moore
+Movie_E Tom Hanks Ian McKellen Audrey Tautou
+Movie_F Audrey Tautou Kevin Bacon Morgan Freeman
+Movie_G Robert Deniro Anne Hathaway Queen Elizabeth John Cusack
+Movie_H Jules Verne Alexander Dumas Victor Hugo Robert Deniro
+Movie_I Audrey Tautou Demi Moore Victor Hugo
+Movie_J Blaise Pascal Neils Bohr Edouard Manet
